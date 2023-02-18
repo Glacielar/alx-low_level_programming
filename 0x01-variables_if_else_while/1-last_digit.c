@@ -3,26 +3,22 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Get a random number, compare its last digit with 5
+ * Description: Get a number, compare it to 5
  * Return: 0
  */
 int main(void)
 {
 	int n;
-	int last;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last = n % 10;
-	if (last > 5)
-		printf("Last digit of %i is %i and is greater than 5\n", n, last);
-	else if (last == 0)
-		printf("Last digit of %i is %i and is 0\n", n, last);
-	else if (last < 6 && last != 0)
-		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+	m = n % 10;
+	if (m > 10)
+		printf("Last digit of %i is %i and is greater than 5\n", n, m);
+	else if (m == 0)
+		printf("Last digit of %i is %i and is 0\n", n, m);
+	else if (m < 6 && m != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
 	return (0);
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-
