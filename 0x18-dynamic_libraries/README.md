@@ -1,1 +1,1 @@
-0x18-static and dynamic libraries
+0x18-dynamic_libraries
